@@ -1,15 +1,24 @@
-import React from 'react';
-import Navbar from './components/Navbar';
+import React, {Fragment} from 'react';
 
 import './App.css';
 
+import Navbar from './components/Navbar';
+import ProductCard from './components/ProductCard';
+
+
+
 function App() {
 
-  const nombre = 'Lalo Landa';
-  
+  const nombre = 'Lalo Landa';  
+
 
   return (
-    <Navbar nombre={nombre} />
+    <Fragment>
+      <Navbar nombre={nombre} />
+      <ProductCard 
+
+      />
+    </Fragment>
   )
 }
 
